@@ -1,6 +1,6 @@
 
 export const enviroment = {
-    api: 'https://rickandmortyapi.com/api/character/1',
+    api: 'https://rickandmortyapi.com/api/character/',
     key: ''
 }
 

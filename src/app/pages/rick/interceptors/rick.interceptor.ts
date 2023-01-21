@@ -11,8 +11,8 @@ export class RickInterceptor implements HttpInterceptor{
 
         const cloneReq = req.clone({
             params: req.params.appendAll({
-                'page': '19',
-                'appid': enviroment.key
+                //'page': '19',
+                //'appid': enviroment.key
             })
         })
         return next.handle(cloneReq);

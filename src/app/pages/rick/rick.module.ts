@@ -8,11 +8,9 @@ import { RickInterceptor } from './interceptors/rick.interceptor';
 
 
 @NgModule({
+  imports: [CommonModule, RickRoutingModule],
+  exports: [RickComponent],
   declarations: [RickComponent],
-  imports: [
-    CommonModule, 
-    RickRoutingModule
-  ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: RickInterceptor, multi: true}
   ]

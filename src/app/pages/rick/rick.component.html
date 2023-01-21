@@ -1,0 +1,17 @@
+<ng-container *ngIf="rick$ | async as rick; else loading">
+  <div class="card" style="width: 10rem;">
+    <div class="card-body">
+      <h5 class="card-title"> {{rick.id}} </h5>
+      <h5 class="card-title"> {{rick.results[0].id}} </h5>
+      <h5 class="card-title"> {{rick.info.count}} </h5>
+      <h5 class="card-title"> {{rick.info}} </h5>
+      <h5 class="card-title"> {{rick}} </h5>
+
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #loading>
+  Introduzca un nombre 
+</ng-template>
+
